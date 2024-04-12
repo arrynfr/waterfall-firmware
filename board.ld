@@ -1,8 +1,11 @@
 ENTRY(_start)
+OUTPUT_FORMAT(elf32-tradbigmips)
 _base = 0x80000000; /* I'm not positive that this is right */
 _stack_size = 1024;
 _rom_size = 1024*1024;
 _reset_vector = 0xBFC00000;
+
+/*TODO: Specify memory map with MEMORY keyword*/
 
 SECTIONS
 {
