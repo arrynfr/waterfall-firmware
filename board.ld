@@ -1,5 +1,5 @@
 ENTRY(_start)
-_base = 0x80000000; // I'm not positive that this is right
+_base = 0x80000000; /* I'm not positive that this is right */
 _stack_size = 1024;
 _rom_size = 1024*1024;
 _reset_vector = 0xBFC00000;
